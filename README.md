@@ -1,14 +1,28 @@
 # captalys-api
 
-A Leiningen template for FIXME.
+In order to distribute the template, you need to run `lein
+install` and watchout to not provide a SNAPSHOT version
+because it seems like leiningen has a bug to deal with it.
+
+After that, run `lein deploy clojars`.
+
+It might be necessary to add the plugin to your
+`~/.lein/profile.clj` file depending on your Leiningen
+version.
+
+`{:user {:plugins [[captalys-api-template "0.1.3"]]}}`
+
+For leiningen 2.x it will download the jar from Clojars if
+not found.
+
 
 ## Usage
 
-FIXME
+`lein new captalys-api <new-project-name>`
 
 ## License
 
-Copyright © 2020 FIXME
+Copyright © 2020 Wanderson Ferreira
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
