@@ -12,7 +12,7 @@ It might be necessary to add the plugin to your
 `~/.lein/profile.clj` file depending on your Leiningen
 version.
 
-`{:user {:plugins [[captalys-api-template "0.1.3"]]}}`
+`{:user {:plugins [[captalys-api-template "0.1.5"]]}}`
 
 For leiningen 2.x it will download the jar from Clojars if
 not found.
