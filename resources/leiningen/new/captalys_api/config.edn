@@ -1,4 +1,4 @@
-{:webserver {:port #or [#env WEBSERVER_PORT 4000]}
+{:webserver {:port #or [#env WEBSERVER_PORT 3000]}
  :postgresql {:dbname "example"
               :host "db"
               :port 5432

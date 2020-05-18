@@ -29,6 +29,12 @@
                      :parameters {:body ::math-request}
                      :handler handle-default-rtx}}]
 
+     ["api/healthcheck" {:tags ["api"]
+                         :get {:summary "how health is this system?"
+                               :handler (fn [_]
+                                          {:status 200
+                                           :body {:message "Very lispy!"}})}}]
+
      ["/swagger.json" {:get {:no-doc true
                              :swagger {:info {:title "{{name}} API"
                                               :description "let's get better at this!"}}
@@ -54,7 +60,7 @@
                          coercion/coerce-request-middleware
                          ]}})
    (ring/routes
-    (swagger-ui/create-swagger-ui-handler {:path "/"
+    (swagger-ui/create-swagger-ui-handler {:path "/docs"
                                            :config {:validatorUrl nil
                                                     :operationsSorter "alpha"}})
     (ring/create-default-handler))))

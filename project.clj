@@ -1,4 +1,4 @@
-(defproject captalys-api-template "0.1.4"
+(defproject captalys-api/lein-template "0.1.5"
   :description "Template of how to create an API at Captalys"
   :url "http://github.com/wandersoncferreira/api-example"
   :license {:name "EPL-2.0 OR GPL-2.0-or-later WITH Classpath-exception-2.0"

@@ -1,6 +1,14 @@
 # Change Log
 All notable changes to this project will be documented in this file. This change log follows the conventions of [keepachangelog.com](http://keepachangelog.com/).
 
+## [0.1.5] - 2020-05-18
+### Added
+- Explicit functions to mount in the `server` file.
+- Endpoint for `api/healthcheck`
+
+### Changed
+- The port number in the `config.edn` file from 4000 to 3000.
+
 ## [0.1.4] - 2020-05-18
 ### Added
 - Dependencies to `hugsql`, `hikari-cp`, `clj-http` and `http-responses`
