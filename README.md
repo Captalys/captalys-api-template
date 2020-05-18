@@ -1,8 +1,10 @@
 # captalys-api
 
-In order to distribute the template, you need to run `lein
-install` and watchout to not provide a SNAPSHOT version
-because it seems like leiningen has a bug to deal with it.
+## To maintainer of this project
+
+In order to distribute the template, you need to run `lein install`
+and watchout to not provide a SNAPSHOT version because it seems like
+leiningen has a bug to deal with it.
 
 After that, run `lein deploy clojars`.
 
@@ -16,9 +18,13 @@ For leiningen 2.x it will download the jar from Clojars if
 not found.
 
 
-## Usage
+## To users of this template
+
+### Usage
 
 `lein new captalys-api <new-project-name>`
+
+
 
 ## License
 
